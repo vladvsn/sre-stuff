@@ -2,7 +2,7 @@
 
 ## requirements
 
-allow passwordless sudo access on mac
+allow passwordless sudo access on mac ( /etc/sudoers )
 ```
 %admin		ALL = (ALL) NOPASSWD: ALL
 ```

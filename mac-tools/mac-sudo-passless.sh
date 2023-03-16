@@ -11,6 +11,7 @@ my_user=`logname`
 # creating sudoer file for my user
 
 touch /private/etc/sudoers.d/$my_user
+chmod 600 /private/etc/sudoers.d/$my_user
 echo "$my_user  ALL = (ALL) NOPASSWD: ALL" > /private/etc/sudoers.d/$my_user
 
 echo "sudo passwordless access has been granted for user: $my_user"
